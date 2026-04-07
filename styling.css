@@ -10,6 +10,12 @@ body {
 table{
     margin: 0 auto;
     width: 600px;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 2px solid white;
+    padding: 12px;
 }
 
 nav{
