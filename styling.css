@@ -1,5 +1,12 @@
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    justify-content: center;
+    max-width: 800px;
     margin: 0 auto;
+    text-align: center;
+}
+
+table{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    width: 600px;
 }
