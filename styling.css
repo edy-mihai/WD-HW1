@@ -3,10 +3,43 @@ body {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    background-color: #592db9;
+    color: white;
 }
 
 table{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0 auto;
     width: 600px;
+}
+
+nav{
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav ul{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #25036e;
+    border: 2px;
+    border-radius: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(246, 255, 0);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.skip-link{
+    color: white;
 }

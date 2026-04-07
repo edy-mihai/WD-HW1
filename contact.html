@@ -10,26 +10,30 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <header>
-        <h1>My Name - Junior Developer</h1>
+        <h1>Petcovici Eduard-Mihai - Junior Developer</h1>
     </header>
 
     <nav>
         <ul>
             <li> <a href="index.html">Home</a> </li>
-            <li><a href="content.html">Content</a> </li>
-            <li><a href="data_page.html">Data page</a> </li>
-            <li><a href="contact.html">Contact</a> </li>
+            <li> <a href="content.html">Content</a> </li>
+            <li> <a href="data_page.html">Data page</a> </li>
+            <li> <a href="contact.html">Contact</a> </li>
         </ul>
     </nav>
     
     <main id="main-content">
+        <h2>Contact</h2>
         <form method="post" action="#" aria-label="Contact form">
                     <fieldset>
                         <legend>Your details</legend>
+
                         <label for="name">Full name (required)</label>
                         <input type="text" id="name" name="name" required>
+
                         <label for="email">Email (required)</label>
                         <input type="email" id="email" name="email" required>
+
                         <label for="phone">Phone (optional)</label>
                         <input type="tel" id="phone" name="phone"
                             pattern="[0-9\s\-+]+" title="Digits, spaces, hyphens, or plus only">
@@ -37,34 +41,37 @@
 
                     <fieldset>
                         <legend>Your message</legend>
+
                         <label for="subject">Subject (required)</label>
                         <input type="text" id="subject" name="subject" required
                             aria-describedby="subject-hint">
                         <p id="subject-hint" class="form-hint">
-                            e.g. Complaints, suggestions, ideas
+                            e.g. Internship inquiry, Freelance project, Networking
                         </p>
+
                         <label for="msg">Message (required)</label>
                         <textarea id="msg" name="message" rows="3" required></textarea>
                     </fieldset>
 
                     <fieldset>
-                    <legend>Overall, how satisfied were you with your experience today?</legend>
-                        <label for="satisfiability-vs">Very satisfied</label>
-                        <input type="radio" id="satisfiability-vs" name="satisfiability" value="vs" required>
-                        <label for="satisfiability-ss">Somewhat satisfied</label>
-                        <input type="radio" id="satisfiability-ss" name="satisfiability" value="ss">
-                        <label for="satisfiability-n">Neutral</label>
-                        <input type="radio" id="satisfiability-n" name="satisfiability" value="n">
-                        <label for="satisfiability-u">Unsatisfied</label>
-                        <input type="radio" id="satisfiability-u" name="satisfiability" value="u">
-                    </fieldset>
+                        <legend>Reason for contacting:</legend>
+    
+                        <label for="reason-job">Job Opportunity</label>
+                        <input type="radio" id="reason-job" name="contact_reason" value="job" required>
+    
+                        <label for="reason-freelance">Freelance Work</label>
+                        <input type="radio" id="reason-freelance" name="contact_reason" value="freelance">
+    
+                        <label for="reason-hi">Just saying hi!</label>
+                        <input type="radio" id="reason-hi" name="contact_reason" value="hi">
+                        </fieldset>
 
                     <button type="submit">Send message</button>
                 </form>
     </main>
 
     <footer>
-        My Name - Web Design 2026
+        Petcovici Eduard-Mihai - Web Design 2026
     </footer>
 
 </body>
