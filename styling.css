@@ -3,8 +3,8 @@ body {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    background-color: #592db9;
-    color: white;
+    color: #B0E4CC;
+    background: #091413;
 }
 
 table{
@@ -14,12 +14,16 @@ table{
 }
 
 th, td{
-    border: 2px solid white;
+    border: 2px solid #B0E4CC;
     padding: 12px;
 }
 
+h1, h2, h3{
+    color: white;
+}
+
 nav{
-    max-width: 350px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -31,39 +35,52 @@ nav ul{
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    background-color: #25036e;
+    /*gap: 100px;*/
+    background-color: #285A48;
     border: 2px;
     border-radius: 20px;
+    padding: 8px;
 }
 
 nav a{
     text-decoration: none;
-    color: rgb(246, 255, 0);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-right: 2px solid #B0E4CC;
+    display: inline-block;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
+li:last-child a{
+    border-right: none;
+}
+
 .skip-link{
-    color: white;
+    color: #B0E4CC;
 }
 
 .project-grid{
     display: grid;
-    max-width: 500px;
+    max-width: 600px;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
     margin: auto;
 }
 
 .project-card{
-    padding: 10px;
+    padding: 15px;
     border-radius: 20px;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     transition: 0.3s;
+    background-color: #285A48;
+    /*border: 2px solid white;*/
 }
 
 .project-card img{
@@ -75,5 +92,9 @@ nav a:hover {
 
 .project-card:hover{
     transform: scale(1.05);
-    box-shadow: 0px 10px 20px black;
+    box-shadow: 0px 10px 20px #B0E4CC;
+}
+
+footer{
+    color: white;
 }
