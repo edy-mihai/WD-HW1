@@ -29,10 +29,11 @@ h1{
 
 h2{
     font-size: 40px;
+    margin-bottom: 20px;
 }
 
 h3{
-
+    font-size: 25px;
 }
 
 nav{
@@ -83,6 +84,9 @@ li:last-child a{
     column-count: 2;
     column-gap: 20px;
     column-rule: 1px solid white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 12px;
 }
 
 .intro p{
@@ -118,6 +122,45 @@ li:last-child a{
     box-shadow: 0px 10px 20px #B0E4CC;
 }
 
+span{
+    display: inline-block;
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: #285A48;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+.project-row{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.project-row:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.project-row img{
+    width: 25%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.project-row div{
+    width: 75%;
+}
+
 footer{
+    margin: 0 auto;
+    margin-top: 20px;
+    border-top: 3px solid white;
+    padding: 10px;
+    max-width: 450px;
     color: white;
 }
