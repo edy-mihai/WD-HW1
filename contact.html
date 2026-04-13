@@ -53,17 +53,23 @@
                         <textarea id="msg" name="message" rows="3" required></textarea>
                     </fieldset>
 
-                    <fieldset>
-                        <legend>Reason for contacting:</legend>
-    
-                        <label for="reason-job">Job Opportunity</label>
-                        <input type="radio" id="reason-job" name="contact_reason" value="job" required>
-    
-                        <label for="reason-freelance">Freelance Work</label>
-                        <input type="radio" id="reason-freelance" name="contact_reason" value="freelance">
-    
-                        <label for="reason-hi">Just saying hi!</label>
-                        <input type="radio" id="reason-hi" name="contact_reason" value="hi">
+                    <fieldset class="radio-group">
+                        <legend>Reason for contacting</legend>
+                        
+                        <div>
+                            <label for="reason-job">Job Opportunity</label>
+                            <input type="radio" id="reason-job" name="contact_reason" value="job" required>
+                        </div>
+                        
+                        <div>
+                            <label for="reason-freelance">Freelance Work</label>
+                            <input type="radio" id="reason-freelance" name="contact_reason" value="freelance">
+                        </div>
+
+                        <div>
+                            <label for="reason-hi">Just saying hi!</label>
+                            <input type="radio" id="reason-hi" name="contact_reason" value="hi">
+                        </div>
                         </fieldset>
 
                     <button type="submit">Send message</button>
