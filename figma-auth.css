@@ -1,0 +1,294 @@
+/* Desktop - 1 */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+
+background: #091413;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 900px;
+height: 600px;
+left: calc(50% - 900px/2);
+top: calc(50% - 600px/2);
+
+background: #285A48;
+border-radius: 20px;
+
+
+/* Line 1 */
+
+position: absolute;
+width: 500px;
+height: 0px;
+left: 720px;
+top: 262px;
+
+border: 2px solid #FFFFFF;
+transform: rotate(90deg);
+
+
+/* Component 5 */
+
+position: absolute;
+width: 400px;
+height: 437px;
+left: 748px;
+top: 293px;
+
+
+
+/* Welcome Back */
+
+position: absolute;
+left: 21%;
+right: 21.25%;
+top: 0%;
+bottom: 91.08%;
+
+/* Heading */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Email: */
+
+position: absolute;
+left: 3.25%;
+right: 83.5%;
+top: 14.87%;
+bottom: 79.63%;
+
+font-family: 'Noto Looped Thai UI';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+
+color: #FFFFFF;
+
+
+
+/* Password: */
+
+position: absolute;
+left: 3.25%;
+right: 76.25%;
+top: 34.55%;
+bottom: 59.95%;
+
+font-family: 'Noto Looped Thai UI';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 21.74%;
+bottom: 71.4%;
+
+background: #091413;
+border-radius: 20px;
+
+
+/* Rectangle 3 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 41.42%;
+bottom: 51.72%;
+
+background: #091413;
+border-radius: 20px;
+
+
+/* Forgot password? */
+
+position: absolute;
+left: 33.25%;
+right: 33.25%;
+top: 50.8%;
+bottom: 43.25%;
+
+font-family: 'Noto Looped Thai UI';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height */
+
+color: #B0E4CC;
+
+
+
+/* Component 1 */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 63.39%;
+bottom: 25.17%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #B0E4CC;
+border-radius: 20px;
+
+
+/* Log in */
+
+position: absolute;
+width: 69px;
+height: 29px;
+left: calc(50% - 69px/2 + 0.5px);
+top: calc(50% - 29px/2 + 0.5px);
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+letter-spacing: -0.02em;
+
+color: #091413;
+
+
+
+/* Component 3 */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 88.56%;
+bottom: 0%;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #B0E4CC;
+border-radius: 20px;
+
+
+/* Log in */
+
+position: absolute;
+width: 85px;
+height: 29px;
+left: calc(50% - 85px/2 + 8.5px);
+top: calc(50% - 29px/2 + 0.5px);
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+letter-spacing: -0.02em;
+
+color: #091413;
+
+
+
+/* or */
+
+position: absolute;
+left: 47.75%;
+right: 48%;
+top: 78.72%;
+bottom: 15.33%;
+
+/* Body text */
+font-family: 'Noto Looped Thai UI';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Component 4 */
+
+position: absolute;
+width: 415px;
+height: 102px;
+left: 288px;
+top: 461px;
+
+
+
+/* Petcovici Eduard-Mihai */
+
+position: absolute;
+left: 16.39%;
+right: 24.34%;
+top: 71.57%;
+bottom: 0%;
+
+font-family: 'Noto Looped Thai UI';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+
+
+
+/* Personal Portfolio */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 43.14%;
+
+font-family: 'Noto Looped Thai UI';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 120%;
+/* identical to box height, or 58px */
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+
