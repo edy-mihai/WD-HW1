@@ -72,6 +72,8 @@ h4 {
     text-decoration: underline;
 }
 
+/* NAV BAR */
+
 nav{
     max-width: 780px;
     margin: 0 auto;
@@ -109,6 +111,51 @@ nav a:hover {
 li:last-child a{
     border-right: none;
 }
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown ul {
+    position: absolute;
+    display: none;
+    top: 25px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    width: 94%;
+    padding-top: 0px;
+}
+
+.dropdown ul a {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+}
+
+.dropdown ul a::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid white;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.dropdown ul li:first-child a {
+    border-top: 2px solid white;
+    padding-top: 5px;
+}
+.dropdown ul li:last-child a::after {
+    border-bottom: none;
+    display: none;
+}
+
+.dropdown ul.show-menu {
+    display: block;
+}
+
+/* SKIP LINK */
 
 .skip-link{
     color: #B0E4CC;

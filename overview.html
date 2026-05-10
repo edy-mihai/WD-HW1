@@ -19,7 +19,13 @@
             <li> <a href="content.html">Content</a> </li>
             <li> <a href="data_page.html">Data</a> </li>
             <li> <a href="contact.html">Contact</a> </li>
-            <li> <a href="card.html">Card</a> </li>
+            <li class="dropdown"> <a href="#" id="more">More</a> 
+                <ul id="more-list">
+                    <li> <a href="card.html">Card</a> </li>
+                    <li> <a href="overview.html">Overview</a> </li>
+                    <li> <a href="chatbot.html">Chatbot</a> </li>
+                </ul>
+            </li>
         </ul>
     </nav>
     
@@ -42,12 +48,12 @@
                     <h3>Van Westendorp</h3>
                 </a>
 
-                <a href="content.html#flappy-bird" class="project-card">
+                <a href="content.html#flappy-bird" class="project-card highlight">
                     <img src="assets/flappy-bird.jpg" alt="Flappy Bird in Unity image">
                     <h3>Flappy Bird</h3>
                 </a>
 
-                <a href="content.html#unity-tutorial" class="project-card">
+                <a href="content.html#unity-tutorial" class="project-card highlight">
                     <img src="assets/unity.jpg" alt="Unity Tutorial image">
                     <h3>Unity Tutorial</h3>
                 </a>
@@ -79,5 +85,7 @@
         Petcovici Eduard-Mihai - Web Design 2026
     </footer>
 
+    <script src="navigation.js"></script>
+    
 </body>
 </html>

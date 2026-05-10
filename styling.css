@@ -72,6 +72,8 @@ h3{
     font-size: 25px;
 }
 
+/* NAV BAR */
+
 nav{
     max-width: 780px;
     margin: 0 auto;
@@ -117,7 +119,43 @@ li:last-child a{
 .dropdown ul {
     position: absolute;
     display: none;
+    top: 25px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    width: 94%;
+    padding-top: 0px;
 }
+
+.dropdown ul a {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+}
+
+.dropdown ul a::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid white;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.dropdown ul li:first-child a {
+    border-top: 2px solid white;
+    padding-top: 5px;
+}
+.dropdown ul li:last-child a::after {
+    border-bottom: none;
+    display: none;
+}
+
+.dropdown ul.show-menu {
+    display: block;
+}
+
+/* SKIP LINK */
 
 .skip-link{
     color: #B0E4CC;
@@ -150,9 +188,16 @@ li:last-child a{
     padding: 15px;
     border-radius: 20px;
     text-decoration: none;
-    color: #ffffff;
     transition: 0.3s;
     background-color: #285A48;
+}
+
+.highlight {
+    background-color: #B0E4CC;
+}
+
+.highlight h3 {
+    color: #091413;
 }
 
 .project-card img{
@@ -304,4 +349,30 @@ footer{
     padding: 10px;
     max-width: 450px;
     color: white;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0 20px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-row {
+        flex-direction: column;
+    }
+
+    .project-row:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .project-row img {
+        width: 100%;
+    }
+
+    .project-row div {
+        width: 100%;
+    }
 }
