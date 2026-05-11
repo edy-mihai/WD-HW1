@@ -335,6 +335,7 @@ button{
     border-radius: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
+    cursor: pointer;
     transition: 0.3s;
 }
 
