@@ -295,7 +295,6 @@ input, textarea{
 input, textarea:focus{
     outline: none;
     border-color: white;
-    box-shadow: 2px white;
 }
 
 
