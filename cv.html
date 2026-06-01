@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Developer Portfolio</title>
+    <title>Add Project - My Developer Portfolio</title>
     <link rel="stylesheet" href="styling.css">
 </head>
 <body>
@@ -24,6 +24,7 @@
                     <li> <a href="card.html">Card</a> </li>
                     <li> <a href="overview.html">Overview</a> </li>
                     <li> <a href="chatbot.html">Chatbot</a> </li>
+                    <li> <a href="cv.html">Add Project</a> </li>
                 </ul>
             </li>
         </ul>
@@ -34,30 +35,52 @@
         <fieldset>
             <legend>Add a New Project</legend>
 
-            <label for="project-name" aria-describedby="name-error">Project Name</label>
-            <input type="text">
+            <label for="project-name" >Project Name</label>
+            <input type="text" id="project-name" aria-describedby="name-error">
             <span id="name-error"></span>
 
-            <input type="url">
+            <label for="project-image" class="upload-btn">Upload Image</label>
+            <input type="file" id="project-image" accept="image/*" aria-describedby="image-error">
+            <span id="file-name-display">No file chosen</span>
+            <span id="image-error"></span>
 
-            <input type="date">
+            <label for="project-url">Project URL</label>
+            <input type="url" id="project-url" aria-describedby="url-error">
+            <span id="url-error"></span>
 
+            <label for="project-date">Completion Date</label>
+            <input type="date" id="project-date" aria-describedby="date-error">
+            <span id="date-error"></span>
 
             <label for="project-tech">Primary tech</label>
                 <select id="project-tech" aria-describedby="tech-error">
                     <option value="">Select a technology</option>
-                    <option value="html-css">HTML/CSS</option>
-                    <option value="js">JavaScript</option>
-                    <option value="c-c++">C/C++</option>
-                    <option value="python">Python</option>
+                    <option value="HTML/CSS">HTML/CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="C/C++">C/C++</option>
+                    <option value="Python">Python</option>
                 </select>
                 <span id="tech-error"></span>
 
             <label for="project-desc">Project description</label>
                 <textarea id="project-desc" aria-describedby="desc-error" rows="4" cols="50"></textarea>
                 <span id="desc-error"></span>
+            
+            <button type="submit">Add Project</button>
         </fieldset>
         </form>
+
+        <div class="table-wrapper">
+            <table id="projects-table">
+                <caption>Submitted Projects</caption>
+                <thead>
+                    <tr>
+                        <th colspan="3" scope="colgroup" class="projects">Projects</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
     </main>
     
     <footer>
@@ -65,5 +88,6 @@
     </footer>
 
     <script src="navigation.js"></script>
+    <script src="form-handler.js"></script>
 </body>
 </html>
