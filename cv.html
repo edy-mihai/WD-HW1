@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <h1>Petcovici Eduard-Mihai - Junior Developer</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="content.html">Content</a> </li>
+            <li> <a href="data_page.html">Data</a> </li>
+            <li> <a href="contact.html">Contact</a> </li>
+            <li class="dropdown"> <a href="#" id="more">More</a> 
+                <ul id="more-list">
+                    <li> <a href="card.html">Card</a> </li>
+                    <li> <a href="overview.html">Overview</a> </li>
+                    <li> <a href="chatbot.html">Chatbot</a> </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <form id="project-form">
+        <fieldset>
+            <legend>Add a New Project</legend>
+
+            <label for="project-name" aria-describedby="name-error">Project Name</label>
+            <input type="text">
+            <span id="name-error"></span>
+
+            <input type="url">
+
+            <input type="date">
+
+
+            <label for="project-tech">Primary tech</label>
+                <select id="project-tech" aria-describedby="tech-error">
+                    <option value="">Select a technology</option>
+                    <option value="html-css">HTML/CSS</option>
+                    <option value="js">JavaScript</option>
+                    <option value="c-c++">C/C++</option>
+                    <option value="python">Python</option>
+                </select>
+                <span id="tech-error"></span>
+
+            <label for="project-desc">Project description</label>
+                <textarea id="project-desc" aria-describedby="desc-error" rows="4" cols="50"></textarea>
+                <span id="desc-error"></span>
+        </fieldset>
+        </form>
+    </main>
+    
+    <footer>
+        Petcovici Eduard-Mihai - Web Design 2026
+    </footer>
+
+    <script src="navigation.js"></script>
+</body>
+</html>
