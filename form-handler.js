@@ -14,6 +14,7 @@ document.getElementById('project-image').addEventListener('change', function() {
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
+    document.getElementById('empty-state')?.remove();
     let projectName = document.getElementById('project-name').value;
     let projectURL = document.getElementById('project-url').value;
     let projectDate = document.getElementById('project-date').value;
@@ -78,7 +79,7 @@ form.addEventListener('submit', function(event) {
                 </tr>
                 <tr class="project-data-row">
                     <td rowspan="3" class="thumbnail-cell">
-                    <img src="${uploadedImageURL}" alt="Thumbnail of Project Name">
+                    <img src="${uploadedImageURL}" alt="Thumbnail of Project Name" loading="lazy">
                     </td>
                     <th scope="row">Completion Date</th>
                     <td>${projectDate}</td>

@@ -393,6 +393,11 @@ button:hover{
 
 /* CV TABLE */
 
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
 #projects-table {
     margin: 0 auto;
     margin-bottom: 46px;
